@@ -1,0 +1,1 @@
+Project using Html, Sass and JS to create a page with a clock. The ppage is fully responsive.
