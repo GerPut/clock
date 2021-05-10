@@ -139,6 +139,7 @@ body{
                 
                 h1{
                     @extend %justify-content;
+                    @extend %align-center;
                    margin: 25px;
                    font-size: 5rem;
                    font-weight: 100;
