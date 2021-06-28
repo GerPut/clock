@@ -20,13 +20,13 @@ function showMessage() {
     let current = date.getHours();
     let boxmsg;
 
-    if (current > 17 && current <= 23) {
+    if (current >= 17 && current <= 23) {
         boxmsg = "Good Evening"
 
-    } else if (current > 12 && current <= 16) {
+    } else if (current >= 12 && current <= 16) {
         boxmsg = "Good Afternoon"
 
-    } else if (current > 0 && current <= 11) {
+    } else if (current >= 0 && current <= 11) {
         boxmsg = "Good Morning"
 
     } else {
