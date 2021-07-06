@@ -1,20 +1,20 @@
 @import 'navbar';
-@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text&display=swap');
 
 *{
     box-sizing: border-box;
     margin:0;
     padding:0;
-    font-family: 'Concert One', cursive;
+    font-family: 'Red Hat Text', sans-serif;
 }
 
 body{
-    background-color: $yellow;
+    background-color: $dark-color;
     height:100%;
 }
 
 .hero {
-    background-color:$yellow;
+    background:linear-gradient($dark-orange, $dark-color);
     &_container{
         display:grid;
         grid-template-columns: 1fr 1fr;
@@ -62,32 +62,14 @@ body{
                  color:$gunmetal;
                 margin-top:1rem;
                  font-weight:700;
+                 
                 @include mobile{
                  font-size:2rem;
+                 display: block;
                  text-align: center;
                 
              }
         }
-
-        &_btn {
-             font-size: 1rem;
-             background-color: $bittersweet;
-             padding:14px 24px;
-             border:none;
-             border-radius:4px;
-             color:$bittersweet;
-              margin-top:2rem;
-             cursor:pointer;
-             position:relative;
-             transition: all 0.3s;
-              outline:none;
-            }  
-
-             &_btn a {
-                text-decoration: none;
-            }   
-            
-            
 
             &_right {
             
@@ -95,12 +77,13 @@ body{
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    background-color:$gunmetal;
+                    background-color:$orange;
                     height: 250px;
                     width: 500px;
                     position: relative;
-                    border: 5px solid $mediumturq;
-                    box-shadow: 0 0 5px 10px $gunmetal;
+                    border: 2px solid $light-orange;
+                    border-radius: 15px;
+                    box-shadow: 0 0 20px 10px $orange;
                     @include mobile{
                         height: 150px;
                         width:300px;
@@ -110,10 +93,11 @@ body{
                 &_inner2 {
                     height: 200px;
                     width: 450px;
-                    background-color:$gunmetal;
+                    background-color:$dark-color;
                     position: absolute;
                     justify-content: center;
-                    border: 2px solid $mintcream;
+                    border: 2px solid $light-orange;
+                    border-radius: 15px;
                     @include mobile{
                         height:105px;
                         width:255px;
@@ -121,7 +105,7 @@ body{
                 }
                 
                 &_inner3 {
-                    background-color: $mintcream;
+                    background-color: $dark-color;
                     height: 175px;
                     width: 425px;
                     position:absolute;
@@ -142,7 +126,9 @@ body{
                     @extend %align-center;
                    margin: 25px;
                    font-size: 5rem;
-                   font-weight: 100;
+                   letter-spacing: 1px;
+                   color:$light-orange;
+                   font-weight: bold;
                    @include mobile{
                     font-size: 3rem;
                  }
